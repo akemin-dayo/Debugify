@@ -24,6 +24,7 @@ This mod replaces many mods and implements fixes from some others
 - **[Title Fix Mod](https://modrinth.com/mod/title-fix-mod)**: Superseded
 - **[Entity Collision FPS Fix Refabricated](https://www.curseforge.com/minecraft/mc-mods/entity-collision-fps-fix-fabric)**: Superseded
 - **[Ctrl Q](https://www.curseforge.com/minecraft/mc-mods/ctrl-q)**: Superseded
+- **[Skeleton Aiming Fix](https://www.curseforge.com/minecraft/mc-mods/skeleton-aiming-fix)**: Superseded
 
 These superseded mods are not hard conflicts and can be used in conjunction with Debugify for any additional advanced features.
 
@@ -31,8 +32,8 @@ These superseded mods are not hard conflicts and can be used in conjunction with
 [GitHub](https://github.com/isXander/Debugify) • [Curseforge](https://curseforge.com/minecraft/mc-mods/debugify) • [Modrinth](https://modrinth.com/mod/debugify) • [Patched bug list](https://github.com/isXander/Debugify/blob/1.19/PATCHED.md) • [Discord](https://short.isxander.dev/discord)
 
 ## What if I want to enable some bug fixes, but not others?
-Debugify has a configuration GUI accessible by Fabric's [Mod Menu](https://modrinth.com/mod/modmenu) or Forge's Built-in mod list.
-If you don't want to use either of them, there is always the configuration file located at
+Debugify has a configuration GUI accessible by Fabric's [Mod Menu](https://modrinth.com/mod/modmenu).
+If you don't want to it, there is always the configuration file located at
 `.minecraft/config/debugify.json`
 ![configuration menu](https://i.imgur.com/0hv9cvu.png)
 

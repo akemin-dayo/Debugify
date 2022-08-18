@@ -19,6 +19,6 @@ jobs:
         with:
           python-version: '3.x'
       - name: Install pip requirements
-        run: pip install requests
+        run: pip install requests packaging
       - name: Run script
         run: python scripts/check_bug_fixes.py
