@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 
 import java.util.List;
 
-@BugFix(id = "MC-112730", category = FixCategory.BASIC, env = BugFix.Env.CLIENT, fabricConflicts = "optifabric")
+@BugFix(id = "MC-112730", category = FixCategory.BASIC, env = BugFix.Env.CLIENT, modConflicts = "optifabric")
 @Mixin(ChunkBuilder.BuiltChunk.RebuildTask.class)
 public class ChunkBuilderBuiltChunkRebuildTaskMixin {
     /**
