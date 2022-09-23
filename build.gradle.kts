@@ -17,7 +17,7 @@ plugins {
 }
 
 group = "dev.isxander"
-version = "2.6.2~akemi"
+version = "2.7.0~akemi"
 
 loom {
     splitEnvironmentSourceSets()
