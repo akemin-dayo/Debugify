@@ -17,7 +17,7 @@ plugins {
 }
 
 group = "dev.isxander"
-version = "2.7.0~akemi"
+version = "2.7.1~akemi"
 
 loom {
     splitEnvironmentSourceSets()
@@ -27,8 +27,6 @@ loom {
             sourceSet(sourceSets["client"])
         }
     }
-
-    accessWidenerPath.set(file("src/main/resources/debugify.accesswidener"))
 }
 
 repositories {

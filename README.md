@@ -19,7 +19,7 @@ This mod replaces many mods and implements fixes from some others
 - **[ChunkSavingFix](https://www.curseforge.com/minecraft/mc-mods/chunk-saving-fix)**
 - **[force-close-world-loading-screen](https://modrinth.com/mod/forcecloseworldloadingscreen)**: Missing option to remove menu fully (as it isn't a bug)
 - **[No Telemetry](https://www.curseforge.com/minecraft/mc-mods/no-telemetry/)**
-- **[ToolTipFix](https://www.curseforge.com/minecraft/mc-mods/tooltipfix)**: Alternative method - tooltips still go off-screen in modded scenarios
+- **[ToolTipFix](https://www.curseforge.com/minecraft/mc-mods/tooltipfix)**
 - **[Title Fix Mod](https://modrinth.com/mod/title-fix-mod)**
 - **[Entity Collision FPS Fix Refabricated](https://www.curseforge.com/minecraft/mc-mods/entity-collision-fps-fix-fabric)**
 - **[Ctrl Q](https://www.curseforge.com/minecraft/mc-mods/ctrl-q)**: Missing other QOL features that aren't bugs.
@@ -49,3 +49,11 @@ so I added a config option that defaults new bug fixes to off, until you get rou
 - [**isXander**](https://github.com/isXander) - Founder of project
 - [**Contributors**](https://github.com/isXander/Debugify/graphs/contributors) - For PRing new fixes!
 - [**MoonTidez**](https://github.com/MoonTidez) - Creating an awesome logo!
+
+### Translators
+- [**RaptaG**](https://github.com/RaptaG) - Greek
+- [**Altegar**](https://github.com/Altegar) - Ukrainian
+- [**ttrafford7**](https://github.com/ttrafford7) - Ukrainian
+- [**GodGun968**](https://github.com/GodGun968) - Chinese
+- [**Agentew04**](https://github.com/Agentew04) - Portuguese
+- [**localfossa**](https://github.com/localfossa) - Turkish
