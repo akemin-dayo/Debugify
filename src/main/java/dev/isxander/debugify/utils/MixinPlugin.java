@@ -4,7 +4,6 @@ import dev.isxander.debugify.Debugify;
 import dev.isxander.debugify.fixes.BugFix;
 import dev.isxander.debugify.fixes.FixCategory;
 import dev.isxander.debugify.fixes.BugFixData;
-import com.llamalad7.mixinextras.MixinExtrasBootstrap;
 import dev.isxander.debugify.fixes.OS;
 import org.objectweb.asm.tree.AnnotationNode;
 import org.objectweb.asm.tree.ClassNode;
@@ -14,7 +13,6 @@ import org.spongepowered.asm.service.MixinService;
 import org.spongepowered.asm.util.Annotations;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -22,7 +20,6 @@ import java.util.Set;
 public class MixinPlugin implements IMixinConfigPlugin {
     @Override
     public void onLoad(String mixinPackage) {
-        MixinExtrasBootstrap.init();
         Debugify.onPreInitialize();
     }
 
@@ -40,21 +37,21 @@ public class MixinPlugin implements IMixinConfigPlugin {
             return true;
 
         BugFixData bugFix = bugFixOptional.get();
-        var multipleMixins = Debugify.config.getBugFixes().containsKey(bugFix);
-        Debugify.config.registerBugFix(bugFix);
+        var multipleMixins = Debugify.CONFIG.getBugFixes().containsKey(bugFix);
+        Debugify.CONFIG.registerBugFix(bugFix);
 
         List<String> conflicts = bugFix.getActiveConflicts();
         if (!conflicts.isEmpty()) {
-            if (Debugify.config.isBugFixEnabled(bugFix) && !multipleMixins)
-                Debugify.logger.warn("Force disabled {} because it's conflicting with: {}", bugFix.bugId(), String.join(", ", conflicts));
+            if (Debugify.CONFIG.isBugFixEnabled(bugFix) && !multipleMixins)
+                Debugify.LOGGER.warn("Force disabled {} because it's conflicting with: {}", bugFix.bugId(), String.join(", ", conflicts));
             return false;
         } else if (!bugFix.satisfiesOSRequirement()) {
-            if (Debugify.config.isBugFixEnabled(bugFix) && !multipleMixins)
-                Debugify.logger.warn("Force disabled {} because it only applies to OS: {}", bugFix.bugId(), bugFix.requiredOs().name());
+            if (Debugify.CONFIG.isBugFixEnabled(bugFix) && !multipleMixins)
+                Debugify.LOGGER.warn("Force disabled {} because it only applies to OS: {}", bugFix.bugId(), bugFix.requiredOs().name());
             return false;
         }
 
-        return Debugify.config.isBugFixEnabled(bugFix);
+        return Debugify.CONFIG.isBugFixEnabled(bugFix);
     }
 
     private Optional<BugFixData> getBugFixForMixin(String mixinClassName) {

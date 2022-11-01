@@ -13,11 +13,11 @@ plugins {
     id("io.github.p03w.machete") version "1.+"
     `maven-publish`
 
-    id("ru.vyarus.use-python") version "2.3.+"
+    id("ru.vyarus.use-python") version "3.0.0"
 }
 
 group = "dev.isxander"
-version = "2.7.1~akemi"
+version = "2.8.0~akemi"
 
 loom {
     splitEnvironmentSourceSets()
@@ -41,7 +41,7 @@ val fabricLoaderVersion: String by rootProject
 val fabricApiVersion: String by rootProject
 val yaclVersion: String by rootProject
 val mixinExtrasVersion: String by rootProject
-val modMenuVersion: String by  rootProject
+val modMenuVersion: String by rootProject
 
 dependencies {
     minecraft("com.mojang:minecraft:$minecraftVersion")
