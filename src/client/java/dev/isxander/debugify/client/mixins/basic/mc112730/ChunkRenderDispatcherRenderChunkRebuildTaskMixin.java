@@ -10,7 +10,7 @@ import java.util.List;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.block.entity.BlockEntity;
 
-@BugFix(id = "MC-112730", category = FixCategory.BASIC, env = BugFix.Env.CLIENT)
+@BugFix(id = "MC-112730", category = FixCategory.BASIC, env = BugFix.Env.CLIENT, modConflicts = "optifabric")
 @Mixin(targets = "net.minecraft.client.renderer.chunk.ChunkRenderDispatcher$RenderChunk$RebuildTask")
 public class ChunkRenderDispatcherRenderChunkRebuildTaskMixin {
     /**
